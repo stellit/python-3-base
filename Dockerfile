@@ -4,7 +4,7 @@ WORKDIR /app
 RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python - --preview
 
 # RUN pip install poetry
-RUN poetry config settings.virtualenvs.create false
+RUN /root/.poetry/bin/poetry config settings.virtualenvs.create false
 COPY poetry.lock pyproject.toml /app/
 
 # to prevent poetry from installing my actual app,
