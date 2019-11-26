@@ -4,7 +4,7 @@ WORKDIR /app
 RUN pip install --pre poetry
 
 # RUN pip install poetry
-COPY poetry.lock pyproject.toml /app
+COPY poetry.lock pyproject.toml /app/
 
 # to prevent poetry from installing my actual app,
 # and keep docker able to cache layers
