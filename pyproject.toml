@@ -4,6 +4,11 @@ version = "0.1.2"
 description = ""
 authors = ["Your Name <you@example.com>"]
 
+[[tool.poetry.source]]
+name = "foo"
+url = "https://mirrors.cloud.tencent.com/pypi/simple"
+default = true
+
 [tool.poetry.dependencies]
 python = "^3.6"
 pre-commit = "^1.19.0"
@@ -12,6 +17,10 @@ grpcio = "^1.25.0"
 grpcio-tools = "^1.25.0"
 streamlit = "^0.50.2"
 jieba = "^0.39"
+textrank4zh = "^0.3"
+bpemb = "^0.3.0"
+sklearn = "^0.0"
+torch = "^1.3.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7.8"
