@@ -4,11 +4,6 @@ version = "0.1.2"
 description = ""
 authors = ["Your Name <you@example.com>"]
 
-[[tool.poetry.source]]
-name = "foo"
-url = "https://mirrors.cloud.tencent.com/pypi/simple"
-default = true
-
 [tool.poetry.dependencies]
 python = "^3.6"
 pre-commit = "^1.19.0"
