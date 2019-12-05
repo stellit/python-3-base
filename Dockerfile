@@ -1,5 +1,7 @@
-FROM python:3.7.2
-RUN mkdir /app
+FROM stellit/python-3-base:v2
+
+RUN pip install -i https://mirrors.ustc.edu.cn/pypi/web/simple pip -U
+RUN pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 WORKDIR /app
 RUN pip install --pre poetry
 
